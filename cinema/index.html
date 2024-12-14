@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cinema">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cinema</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/plyr.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+
+  <body>
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="./index.html">
+                Cinema
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="header__nav">
+                <nav class="header__menu mobile-menu">
+                  <ul>
+                    <li class="active"><a href="./index.html">Homepage</a></li>
+                      <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>
+                        <ul class="dropdown">
+                          <li><a href="./categories.html">Action</a></li>
+                          <li><a href="./anime-details.html">Thriller</a></li>
+                          <li><a href="./anime-watching.html">Drama</a></li>
+                          <li><a href="./blog-details.html">Adventures</a></li>
+                          <li><a href="./signup.html">Comedy</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+                </nav>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="header__right">
+              <a href="#" class="search-switch"><span class="icon_search"></span></a>
+              <a href="./login.html"><span class="icon_profile"></span></a>
+            </div>
+          </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__slider owl-carousel">
+
+          <div class="hero__items set-bg" data-setbg="img/hero/gladiator_2.jpg">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__text">
+                  <div class="label">Action</div>
+                  <h2>Gladiator 2</h2>
+                  <p>After 30 days of death of Mark Aurelius...</p>
+                  <a href="#"><span>Buy ticket Now</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__items set-bg" data-setbg="img/hero/mission_red.jpg">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__text">
+                  <div class="label">Comedy</div>
+                  <h2>Mission: Red</h2>
+                  <p>Santa-Claus under code name Red is stolen...</p>
+                  <a href="#"><span>Buy ticket Now</span> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__items set-bg" data-setbg="img/hero/venom.jpeg">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__text">
+                  <div class="label">Thriller</div>
+                  <h2>Venom: Last Dance</h2>
+                  <p>Eddie Brock and his inner symbiote Venom hide in Mexico...</p>
+                  <a href="#"><span>Buy ticket Now</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="product spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="trending__product">
+
+              <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                  <div class="section-title">
+                    <h4>Trending Now</h4>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="btn__all">
+                    <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="img/trending/gladiator_2.jpg">
+                      <div class="ep">18+</div>
+                      <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                      <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                    </div>
+
+                    <div class="product__item__text">
+                      <ul>
+                        <li>Action</li>
+                        <li>Adventures</li>
+                        <li>Drama</li>
+                      </ul>
+                      <h5><a href="#">Gladiator 2</a></h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="img/trending/mission_red.jpg">
+                      <div class="ep">12+</div>
+                      <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                      <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                    </div>
+
+                    <div class="product__item__text">
+                      <ul>
+                        <li>Action</li>
+                        <li>Comedy</li>
+                      </ul>
+                        <h5><a href="#">Mission: Red</a></h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="img/trending/venom.jpeg">
+                      <div class="ep">16+</div>
+                      <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                      <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                    </div>
+
+                    <div class="product__item__text">
+                      <ul>
+                        <li>Action</li>
+                        <li>Thriller</li>
+                      </ul>
+                      <h5><a href="#">Venom: Last Dance</a></h5>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="live__product">
+              <div class="row">
+
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                  <div class="section-title">
+                    <h4>Premiere</h4>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="btn__all">
+                    <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="img/premiere/juror_number2.jpg">
+                      <div class="ep">16+</div>
+                      <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                      <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                    </div>
+
+                    <div class="product__item__text">
+                      <ul>
+                        <li>Drama</li>
+                      </ul>
+                      <h5><a href="#">Juror Number Two</a></h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="img/premiere/black_castle.jpg">
+                      <div class="ep">12+</div>
+                      <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                      <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                    </div>
+
+                    <div class="product__item__text">
+                      <ul>
+                        <li>Adventures</li>
+                      </ul>
+                      <h5><a href="#">Black Castle</a></h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="img/premiere/mary.jpg">
+                      <div class="ep">12+</div>
+                      <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                      <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                    </div>
+
+                    <div class="product__item__text">
+                      <ul>
+                        <li>Drama</li>
+                      </ul>
+                      <h5><a href="#">Mary</a></h5>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="product__sidebar">
+              <div class="product__sidebar__view">
+
+                <div class="section-title">
+                  <h5>Recommended</h5>
+                </div>
+
+                <!-- <ul class="filter__controls">
+                    <li class="active" data-filter="*">Day</li>
+                    <li data-filter=".week">Week</li>
+                    <li data-filter=".month">Month</li>
+                    <li data-filter=".years">Years</li>
+                </ul> -->
+
+                <div class="filter__gallery">
+                  <div class="product__sidebar__view__item set-bg mix day years"
+                  data-setbg="img/sidebar/heretic.jpg">
+                    <div class="ep">18+</div>
+                    <!-- <div class="view"><i class="fa fa-eye"></i> 9141</div> -->
+                    <h5><a href="#">Heretic</a></h5>
+                  </div>
+
+                  <div class="product__sidebar__view__item set-bg mix month week"
+                  data-setbg="img/sidebar/astral_medium.jpg">
+                    <div class="ep">18+</div>
+                    <h5><a href="#">Astral: Medium</a></h5>
+                  </div>
+
+                  <div class="product__sidebar__view__item set-bg mix week years"
+                  data-setbg="img/sidebar/count.jpg">
+                    <div class="ep">12+</div>
+                    <h5><a href="#">Count Of Monte Cristo</a></h5>
+                  </div>
+                          
+                  <div class="product__sidebar__view__item set-bg mix years month"
+                  data-setbg="img/sidebar/nagiev1.jpg">
+                    <div class="ep">12+</div>
+                    <h5><a href="#">Wrap Dad Up Mom</a></h5>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="page-up">
+        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer__logo">
+              <a href="./index.html">Cinema</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="footer__nav">
+              <ul>
+                <li class="active"><a href="./index.html">Homepage</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <!-- <li><a href="./blog.html">Our Blog</a></li>
+                <li><a href="#">Contacts</a></li> -->
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  <div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div class="search-close-switch"><i class="icon_close"></i></div>
+        <form class="search-model-form">
+          <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
