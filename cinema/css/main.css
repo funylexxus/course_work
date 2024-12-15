@@ -1,0 +1,54 @@
+.auth-section {
+  display: inline-flex;
+  align-items: center;
+}
+
+.username-display {
+  margin-left: 5px;
+  color: #ffffff;
+  display: none; /* По умолчанию скрыт */
+}
+
+.authenticated .username-display {
+  display: inline-block;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #171717;
+  border-radius: 5px;
+  padding: 10px 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.auth-section:hover .profile-dropdown {
+  display: block;
+}
+
+.profile-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-dropdown ul li {
+  padding: 5px 15px;
+}
+
+.profile-dropdown ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.profile-dropdown ul li a:hover {
+  color: #e53637;
+}
+
+.auth-section {
+  position: relative;
+}

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
 
   <body>
@@ -31,7 +32,7 @@
         <div class="row">
           <div class="col-lg-2">
             <div class="header__logo">
-              <a href="/course_work/cinema/index.html">
+              <a href="./index.html">
                 Cinema
               </a>
             </div>
@@ -41,14 +42,14 @@
             <div class="header__nav">
                 <nav class="header__menu mobile-menu">
                   <ul>
-                    <li class="active"><a href="/course_work/cinema/index.html">Homepage</a></li>
-                      <li><a href="/course_work/cinema/categories/categories.html">Categories <span class="arrow_carrot-down"></span></a>
+                    <li class="active"><a href="./index.html">Homepage</a></li>
+                      <li><a href="./categories/categories.html">Categories <span class="arrow_carrot-down"></span></a>
                         <ul class="dropdown">
-                          <li><a href="/course_work/cinema/categories/action.html">Action</a></li>
-                          <li><a href="/course_work/cinema/categories/thriller.html">Thriller</a></li>
-                          <li><a href="/course_work/cinema/categories/drama.html">Drama</a></li>
-                          <li><a href="/course_work/cinema/categories/adventures.html">Adventures</a></li>
-                          <li><a href="/course_work/cinema/categories/comedy.html">Comedy</a></li>
+                          <li><a href="./categories/action.html">Action</a></li>
+                          <li><a href="./categories/thriller.html">Thriller</a></li>
+                          <li><a href="./categories/drama.html">Drama</a></li>
+                          <li><a href="./categories/adventures.html">Adventures</a></li>
+                          <li><a href="./categories/comedy.html">Comedy</a></li>
                         </ul>
                       </li>
                   </ul>
@@ -59,7 +60,12 @@
           <div class="col-lg-2">
             <div class="header__right">
               <a href="#" class="search-switch"><span class="icon_search"></span></a>
-              <a href="/course_work/cinema/auth/auth.html"><span class="icon_profile"></span></a>
+              <div class="auth-section">
+                <a href="./auth/auth.html" id="authLink">
+                  <span class="icon_profile"></span>
+                  <span id="username" class="username-display"></span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -129,7 +135,7 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-4">
                   <div class="btn__all">
-                    <a href="/course_work/cinema/categories/categories.html" class="primary-btn">View All <span class="arrow_right"></span></a>
+                    <a href="./categories/categories.html" class="primary-btn">View All <span class="arrow_right"></span></a>
                   </div>
                 </div>
               </div>
@@ -204,7 +210,7 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-4">
                   <div class="btn__all">
-                    <a href="/course_work/cinema/categories/categories.html" class="primary-btn">View All <span class="arrow_right"></span></a>
+                    <a href="./categories/categories.html" class="primary-btn">View All <span class="arrow_right"></span></a>
                   </div>
                 </div>
               </div>
@@ -325,15 +331,15 @@
         <div class="row">
           <div class="col-lg-3">
             <div class="footer__logo">
-              <a href="/course_work/cinema/index.html">Cinema</a>
+              <a href="./index.html">Cinema</a>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="footer__nav">
               <ul>
-                <li class="active"><a href="/course_work/cinema/index.html">Homepage</a></li>
-                <li><a href="/course_work/cinema/categories/categories.html">Categories</a></li>
+                <li class="active"><a href="./index.html">Homepage</a></li>
+                <li><a href="./categories/categories.html">Categories</a></li>
                 <!-- <li><a href="./blog.html">Our Blog</a></li>
                 <li><a href="#">Contacts</a></li> -->
               </ul>
@@ -361,6 +367,7 @@
   <script src="js/jquery.slicknav.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/auth-status.js"></script>
 </body>
 
 </html>
