@@ -1,40 +1,42 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const usernameElement = document.getElementById('username');
-  const logoutBtn = document.getElementById('logoutBtn');
-  const authLink = document.getElementById('authLink');
-  const logoutDropdown = document.querySelector('.logout-dropdown');
-
-  function updateAuthStatus() {
+document.addEventListener('DOMContentLoaded', () => {
+  const checkAuthStatus = () => {
+    // Получаем данные пользователя из localStorage
     const userData = localStorage.getItem('userData');
+    const usernameElement = document.getElementById('username');
+    const authLink = document.getElementById('authLink');
+    const authSection = document.querySelector('.auth-section');
+
     if (userData) {
       const user = JSON.parse(userData);
-      // Показываем имя пользователя
       usernameElement.textContent = user.username;
-      // Показываем выпадающее меню для выхода
-      logoutDropdown.style.display = 'block';
-      // Скрываем ссылку на авторизацию
-      authLink.style.display = 'none';
+      authSection.classList.add('authenticated');
+
+      // Изменяем поведение клика на иконку профиля
+      authLink.href = '#'; // Можно изменить на страницу профиля
+
+      // Добавляем выпадающее меню при наведении
+      const dropdownMenu = document.createElement('div');
+      dropdownMenu.className = 'profile-dropdown';
+      dropdownMenu.innerHTML = `
+        <ul>
+          <li><a href="#" id="logoutBtn">Выйти</a></li>
+        </ul>
+      `;
+
+      authSection.appendChild(dropdownMenu);
 
       // Добавляем обработчик для кнопки выхода
-      logoutBtn.addEventListener('click', (e) => {
+      document.getElementById('logoutBtn').addEventListener('click', (e) => {
         e.preventDefault();
         localStorage.removeItem('userData');
-        window.location.href = '../auth/auth.html';
+        window.location.reload();
       });
     } else {
-      // Скрываем выпадающее меню для выхода
-      logoutDropdown.style.display = 'none';
-      // Показываем ссылку на авторизацию
-      authLink.style.display = 'block';
+      usernameElement.textContent = '';
+      authSection.classList.remove('authenticated');
+      authLink.href = '/cinema/auth/auth.html';
     }
-  }
+  };
 
-  updateAuthStatus();
-
-  // Слушаем изменения в localStorage
-  window.addEventListener('storage', function (e) {
-    if (e.key === 'userData') {
-      updateAuthStatus();
-    }
-  });
+  checkAuthStatus();
 });

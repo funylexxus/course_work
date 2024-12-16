@@ -200,7 +200,7 @@ class Cart {
     this.updateCartDisplay();
     this.updateCartCount();
     this.updateUserDisplay();
-    window.location.href = './auth/auth.html';
+    window.location.href = '../auth/auth.html';
   }
 
   removeItem(id) {
