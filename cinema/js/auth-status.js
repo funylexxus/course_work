@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       usernameElement.textContent = '';
       authSection.classList.remove('authenticated');
-      authLink.href = './auth/auth.html';
+      authLink.href = '/cinema/auth/auth.html';
     }
   };
 
